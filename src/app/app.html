@@ -230,7 +230,8 @@
           <clipPath id="a"><path fill="#fff" d="M0 0h982v239H0z" /></clipPath>
         </defs>
       </svg>
-      <h1>Hello, {{ title() }}</h1>
+      <h1 appHighlight>Hello, {{ title()  | numberOnly}}</h1>
+      
       <p>Congratulations! Your app is running. 🎉</p>
     </div>
     <div class="divider" role="separator" aria-label="Divider"></div>
@@ -250,7 +251,7 @@
             target="_blank"
             rel="noopener"
           >
-            <span>{{ item.title }}</span>
+            <span >{{ item.title }}</span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               height="14"
